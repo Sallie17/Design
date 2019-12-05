@@ -1,0 +1,344 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Jess Megg</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+		<link rel="stylesheet" href="estilos/estilos.css" type="text/css">
+	
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+		<link href="css/lightbox.css" rel="stylesheet">
+	
+		<link href="https://fonts.googleapis.com/css?family=Exo+2:200" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Exo+2:300" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Exo+2:600" rel="stylesheet">
+
+		<link rel="stylesheet" id="camera-css"  href="css/camera.css" type="text/css" media="all"> 
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+    
+	<style>
+		.fluid_container {
+			margin: 0 auto;
+			width: 100%;
+		}
+	</style>
+	
+	<style>:target:before {
+		content:"";
+		display:block;
+		height:80px; /* fixed header height*/
+		margin:-80px 0 0; /* negative fixed header height */
+		}
+	</style>
+	
+	<script type='text/javascript' src='scripts/jquery.min.js'></script>
+    <script type='text/javascript' src='scripts/jquery.mobile.customized.min.js'></script>
+    <script type='text/javascript' src='scripts/jquery.easing.1.3.js'></script> 
+    <script type='text/javascript' src='scripts/camera.min.js'></script> 
+    
+    <script>
+		jQuery(function(){
+			
+			jQuery('#camera_wrap_1').camera({
+				thumbnails: false,
+				pagination: false,
+				height: '50%',
+				fix: 'simpleFade'
+			})
+		});
+	</script>
+	
+</head>
+	
+	
+	
+
+<body>
+	<header class="topmenu">
+		<nav class="topnav" id="myTopnav">
+			<a class="logo animated bounceInLeft delay-2s"><img src="img/logoweb.png" width="auto" height="52px" alt=""/></a>
+			<a href="#top" class=" btn active">inicio</a>
+			<a href="#bio" class="btn">bio</a>
+			<a href="#tatuajes" class="btn">tatuajes</a>
+			<a href="#viajes" class="btn">viajes</a>
+			<a href="#blog" class="btn">blog</a>
+			<a href="#ubicacion_actual" class="btn">ubicación actual</a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+			</a>
+		</nav>
+	</header>
+	
+	<main id="top">		
+		
+<section id="banner" class="col-12 col-s-12">
+	   		 <img src="img/banner.jpg" width="100%" height="auto" alt=""/>
+		</section>
+		
+<section id="bio" class="col-12 col-s-12 row">
+			<header class="col-12 col-s-12 titulo"> 
+					b i o 
+			</header>
+			<div class="col-6 col-s-6 txtcorrido medianil">
+					<p>Nacida en el año 1989 en la ciudad de Monte Hermoso, a los 19 años decidí que mi lugar en el mundo no era ninguno en específico, sino todos a la vez. En mi nómade forma de pensar, descubrí que esto iba a ser posible si decidía arriesgarme a dejar de pensar en ese viaje como un sueño y transformarlo en un proyecto a realizar. Pero ese plan pudo ser puesto en marcha recién luego de muchos años de esfuerzo, trabajo y dedicación, siempre con la mirada fija en el objetivo de viajar entintando pieles. Así, en el año 2017 comencé mi recorrido en Nueva Zelanda, lugar que me vio crecer y afianzar mi decisión de no pertenecer a ningún lugar y todos a la vez. Con muchos más destinos por visitar, este estilo de vida que tantas alegrías trae y, a veces, situaciones que nos ponen a prueba como humanos, es sin duda la manera en que elijo vivir mis días una y otra vez.</p>
+		 	</div>
+			<div id="fotopers" class="col-6 col-s-6 centro medianil">
+					<img src="img/fotopers.jpg" style="align-self: center" alt=""/>
+			</div>
+		</section>
+		
+<section id="tatuajes" class="row">
+			<header class="col-12 col-s-12 titulo_izq">
+					t a t u a j e s   +   v i a j e s
+			</header>
+			<article class="col-6 col-s-6 medianil">
+				
+				<div class="fluid_container">
+    	<div class="camera_wrap camera_black_skin" id="camera_wrap_1">
+            <div data-src="img/tat1.jpg">
+                <div class="camera_caption fadeFromBottom">
+                   Nueva Zelanda</em>
+                </div>
+            </div>
+			<div data-src="img/tat2.jpg">
+                <div class="camera_caption fadeFromBottom">
+                   Nueva Zelanda</em>
+                </div>
+            </div>
+			<div data-src="img/tat3.jpg">
+                <div class="camera_caption fadeFromBottom">
+                   Nueva Zelanda</em>
+                </div>
+            </div>	
+				
+			<div data-src="img/tat4.jpg">
+                <div class="camera_caption fadeFromBottom">
+                   Nueva Zelanda</em>
+                </div>
+            </div>	
+			<div data-src="img/tat5.jpg">
+                <div class="camera_caption fadeFromBottom">
+                   Nueva Zelanda</em>
+                </div>
+            </div>	
+			<div data-src="img/tat6.jpg">
+                <div class="camera_caption fadeFromBottom">
+                   Australia</em>
+                </div>
+            </div>		
+			<div data-src="img/tat7.jpg">
+                <div class="camera_caption fadeFromBottom">
+                   Australia</em>
+                </div>
+            </div>		
+			<div data-src="img/tat8.jpg">
+                <div class="camera_caption fadeFromBottom">
+                   Australia</em>
+                </div>
+            </div>
+			<div data-src="img/tat9.jpg">
+                <div class="camera_caption fadeFromBottom">
+                   Australia</em>
+                </div>
+            </div>	
+			<div data-src="img/tat10.jpg">
+                <div class="camera_caption fadeFromBottom">
+                   Australia</em>
+                </div>
+            </div>	
+			<div data-src="img/tat11.jpg">
+                <div class="camera_caption fadeFromBottom">
+                   Fiyi</em>
+                </div>
+            </div>	
+			<div data-src="img/tat12.jpg">
+                <div class="camera_caption fadeFromBottom">
+                   Fiyi</em>
+                </div>
+            </div>	
+			<div data-src="img/tat13.jpg">
+                <div class="camera_caption fadeFromBottom">
+                   Fiyi</em>
+                </div>
+            </div>	
+			<div data-src="img/tat14.jpg">
+                <div class="camera_caption fadeFromBottom">
+                  Fiyi</em>
+                </div>
+            </div>	
+			<div data-src="img/tat15.jpg">
+                <div class="camera_caption fadeFromBottom">
+                  Fiyi</em>
+                </div>
+            </div>
+			<div data-src="img/tat16.jpg">
+                <div class="camera_caption fadeFromBottom">
+                   Japón</em>
+                </div>
+            </div>
+			<div data-src="img/tat17.jpg">
+                <div class="camera_caption fadeFromBottom">
+                   Japón</em>
+                </div>
+            </div>
+			<div data-src="img/tat18.jpg">
+                <div class="camera_caption fadeFromBottom">
+                   Japón</em>
+                </div>
+            </div>
+			<div data-src="img/tat19.jpg">
+                <div class="camera_caption fadeFromBottom">
+                   Japón</em>
+                </div>
+            </div>
+
+
+
+
+        </div><!-- #camera_wrap_1 -->
+    </div><!-- .fluid_container -->
+			</article>
+			<article class="col-6 col-s-6 txtcorrido_izq medianil">
+					<p>Con más de 7 años de trayectoria en el hermoso mundo del tatuaje profesional, al día de hoy sigo aprendiendo de cada piel en la cual plasmo mi arte. El tatuaje es un medio de comunicación en donde dos personas entregan su cuerpo y alma, generando una confianza inmediata la cual no se produce si otras fuesen las circunstancias. He conocido incontables personas, afiancé amistades, intercambié conversaciones profundas, risas y hasta llantos. Porque un tatuador es, también, muchas veces un confidente que deja esa huella en tu cuerpo que tanto deseás ver todos los días. Esa conexión entre el artista y el cliente, es invaluable para mí, una unión de por vida. Personas de todo el mundo han sabido abrir su corazón para así explicar esa historia detrás que los lleva a tatuársela y no querer olvidarla jamás. Es por todo esto y más que viajar dejando mi arte en personas con culturas, experiencias y caminos tan diferentes entre sí, hace que no solo sea un crecimiento profesional y artístico constante, sino también personal y espiritual.</p>
+			</article>
+		</section>
+<section id="viajes" class="row">
+			<article class="col-3 col-s-6">
+				<div class="centro">
+					<a href="img/nz.jpg" data-lightbox="image-1" data-title="Nueva Zelanda"><img src="img/nzfiltro.jpg"/></a>
+				</div>
+				<div class="subtitulo centro medianil">
+					N u e v a   Z e l a n d a
+				</div>
+				<div class="txt_viaje centro medianil">
+					<p>En el 2017 comenzó mi viaje hacia la lejanas tierras kiwi. A medida que el planeta se calienta, tanto a nivel medioambiental como político, conviene recordar que existe un país aún despoblado, verde, pacífico y acogedor. Una mezcla de paisajes de ensueño, culturas y relax a toda hora.</p>
+				</div>
+			</article>
+			
+			<article class="col-3 col-s-6">
+				<div class="centro">
+					<a href="img/australia.jpg" data-lightbox="image-1" data-title="Australia"><img src="img/australiafiltro.jpg"/></a>
+				</div>
+				<div class="subtitulo centro medianil">
+					A u s t r a l i a
+				</div>
+				<div class="txt_viaje centro medianil">
+					<p>Este inmenso, próspero y multicultural país posee una espléndida naturaleza, casi la totalidad de su población viviendo en núcleos urbanos distribuídos por la costa. La mejor manera de apreciar y disfrutar Australia es recorriendo sus largas rutas, las cuales surcan todo el vasto territorio.</p>
+				</div>
+			</article>
+				
+			<article class="col-3 col-s-6">
+				<div class="centro">
+					<a href="img/fiyi.jpg" data-lightbox="image-1" data-title="Fiyi"><img src="img/fiyifiltro.jpg"/></a>
+				</div>
+				<div class="subtitulo centro medianil">
+					F i y i
+				</div>
+				<div class="txt_viaje centro medianil">
+					<p>Paradisíaca isla soñada con playas ribeteadas con palmeras, coloridos arrecifes y lugareños sonrientes, una nirvana para los amantes de la costa. A diferencia de lo que se podría creer, la vida nocturna en la ciudad y su nutrida población estudiantil, le confieren a Fiyi un sorprendente aire juvenil. </p>
+				</div>
+			</article>
+			
+		  <article class="col-3 col-s-6">
+				<div class="centro">
+					<a href="img/japon.jpg" data-lightbox="image-1" data-title="Japón"><img src="img/japonfiltro.jpg"/></a>
+				</div>
+				<div class="subtitulo centro medianil">
+					J a p ó n
+				</div>
+				<div class="txt_viaje centro medianil">
+					<p>Es realmente un lugar eterno, donde las antiguas tradiciones se fusionan con la modernidad de la manera más natural. Los paisajes urbanos de las ciudades, llenos de neones, parecen decorados de una película de ciencia ficción, aunque algunos no hayan cambiado en décadas.</p>
+				</div>
+			</article>
+			
+		</section>
+		
+<section id="blog" class="centro row">
+			<header class="col-12 col-s-12 titulo">
+					b l o g
+			</header>
+		
+			<article class="col-12 col-s-12 centro">
+				<img src="img/bannerblog.jpg" alt=""/>
+			</article>
+			
+			<article class="txtcorrido">
+				<p>El blog Volando por el Espacio nació como un espacio personal en donde plasmar las ansias y deseos de recorrer el mundo. Con el correr del tiempo, y sumando la experiencia adquirida, el blog creció notablemente su número de lectores. Hoy en día, allí se pueden encontrar información detallada acerca de las distintas culturas que he conocido, junto con sus respectivos análisis sociológicos y comunicacionales. Todo esto combinado con las anécdotas propias que los viajes saben brindar, contadas con sentido del humor y detalles personales.</p> 
+			</article>
+		</section>
+		
+<section id="ubicacion_actual" class="row">
+			<header class="col-12 col-s-12 titulo_izq">
+					u b i c a c i ó n   a c t u a l
+			</header>
+	<article class="col-6 col-s-12 row medianil">		
+			<div class="subtitulo centro">
+				Argentina
+		</div>
+				<div class="subtitulo2 centro">
+				( Próximo destino: M é x i c o )
+		</div>
+		<div class="row video-responsive centro medianil lotengo">
+			<iframe width="100%" height="257" src="https://www.youtube.com/embed/qXj99-i-y0Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>	
+	</article>
+	
+	
+	<article class="col-6 col-s-12 row">
+		<div class="txtcorrido medianil">
+			Volver al país de origen luego de viajar por lugares tan paradisíacos, es una experiencia diferente, dista mucho de lo antes vivido. Argentina posee una variedad infinita de paisajes y atracciones, incluyendo playas, montañas y ambientes urbanos.
+			Latinoamérica es para recorrer, conocer y aprender de su multiculturalidad y nutrirse de ello.
+			</div>
+				<div class="centro medianil">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17612.505919574596!2d-62.27974042365618!3d-38.70677375235522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95edbcaca05a1517%3A0x5b16a7b564a6d703!2sZapiola+245%2C+B8000CLE+Bah%C3%ADa+Blanca%2C+Buenos+Aires!5e0!3m2!1ses-419!2sar!4v1542037814409" width="100%" height="369" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+	</article>
+	
+		</section>
+	<footer class="centro">
+		
+	</footer>
+		
+</main>
+	
+<a href="#0" class="cd-top js-cd-top">Top</a>
+	<script src="js/main.js"></script>
+
+
+	<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+	<script src="js/lightbox.js"></script>
+<script>
+		new WOW().init();
+	</script>
+
+</body>
+
+</html>

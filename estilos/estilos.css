@@ -1,0 +1,322 @@
+@charset "utf-8";
+html, body {
+	height: 100%;
+	margin: 0px;
+	background-color: white;
+}
+.video-responsive {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    position: relative;
+    }
+
+.video-responsive iframe, .video-responsive object, .video-responsive embed {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    }
+
+
+/* INICIO Menú */
+
+.logo {
+	float: left;
+	padding-right: 30px;
+	padding-bottom: 5px;
+	padding-left: 30px;
+	padding-top: 5px;
+}
+
+
+.flex {
+	display: block;
+}
+
+.topmenu {
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 9999;
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+	-webkit-box-shadow: 6px 0px 11px rgba(0,0,0,1.00);
+	box-shadow: 6px 0px 11px rgba(0,0,0,1.00);
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f1e7de;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 300;
+  font-size: 15px;
+
+}
+
+.topnav a:hover {
+  	border-bottom: 5px solid #f1e7de;
+  color: #f1e7de;
+}
+
+.active {
+  color: #f1e7de;
+	border-bottom: 5px solid #f1e7de;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+
+@media screen and (max-width: 780px) {
+  .topnav a:not(:nth-child(2)) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+
+/* FIN Menú */
+
+* { 
+    box-sizing: border-box;
+}
+
+
+[class*="col-"] {
+    float: left;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+/* 1- Para celulares: en este caso el selector se aplica a todas las clases en las cuales su nombre comience con col-
+Por lo que en celulares, todas las columnas van a ocupar el 100% de ancho de manera automatica*/
+
+[class*="col-"] {
+    width: 100%;
+}
+/* FIN Para celulares */
+
+
+/* 2- Para tablets: este conjunto de selectores se aplica cuando la medida del navegador sea como minimo de 600px de ancho.
+dentro de este grupo podemos crear nuestros propios selectores para que funcionen en ese momento*/
+
+@media only screen and (min-width: 600px) {
+
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+/* FIN Para tablets */
+
+
+/* 3- Para escritorio: este conjunto de selectores se aplica cuando la medida del navegador sea como minimo de 768px de ancho.
+dentro de este grupo podemos crear nuestros propios selectores para que funcionen en ese momento*/
+
+@media only screen and (min-width: 768px) {
+	
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+}
+
+/* FIN Para escritorio */
+
+.titulo_izq {
+	color: black;
+	font-size: 45px;
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 200;
+	text-decoration: none;
+	padding-top: 30px;
+	padding-bottom: 15px;
+	text-align: right;
+	padding-right: 30px;
+	float: right;
+	clear: left;
+	background-color: #f1e7de;
+	margin-top: 40px;
+	margin-bottom: 15px;
+}
+
+.txtcorrido {
+	font-size: 12px;
+	text-align: justify;
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 300;
+	text-decoration: none;
+	color: black;
+	position: relative;
+	height: 50%;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.txtcorrido_izq {
+	font-size: 12px;
+	text-align: justify;
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 300;
+	text-decoration: none;
+	color: black;
+	position: relative;
+	height: 50%;
+	padding-right: 30px;
+	padding-left: 30px;
+}
+
+.titulo {
+	color: black;
+	font-size: 45px;
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 200;
+	text-decoration: none;
+	padding-left: 30px;
+	padding-top: 30px;
+	padding-bottom: 15px;
+	text-align: left;
+	background-color: #f1e7de;
+	margin-top: 40px;
+	margin-bottom: 15px;
+}
+
+#color {
+	background-color: #f1e7de;
+	height: 258px;
+	width: auto;
+}
+
+.medianil {
+	background-clip: padding-box;
+    border: 5px solid transparent;
+}
+
+#fotopers {
+	position: relative;
+	padding-right: 30px;
+	align-content: center;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+.centro {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.subtitulo {
+	color: black;
+	font-size: 21px;
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 300;
+	text-decoration: none;
+	text-align: center;
+}
+
+.subtitulo2 {
+	color: black;
+	font-size: 16px;
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 200;
+	text-decoration: none;
+	text-align: center;
+}
+
+.txt_viaje {
+	font-size: 12px;
+	text-align: justify;
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 300;
+	text-decoration: none;
+	color: black;
+	position: relative;
+	height: 50%;
+	
+}
+
+.txtcorrido_centro {
+	font-size: 12px;
+	text-align: justify;
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 300;
+	text-decoration: none;
+	color: black;
+	position: relative;
+	height: 50%;
+	clear: none;
+}
+
+.lotengo {
+	margin-top: 16px;
+}
+
+.footer {
+	background-color: #f1e7de;
+	height: 34px;
+	width: 100%;
+}
+
+#viajes {
+	margin-top: 40px;
+	margin-bottom: 15px;
+	padding-box: 30px;
+}
+
+#ubicacion_actual {
+	padding-box:30px;
+}
